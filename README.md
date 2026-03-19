@@ -81,16 +81,27 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-## API Çalıştırma
+## Uygulamayı Çalıştırma
+
+Önce API servisini başlat:
 
 ```bash
 uvicorn src.app:app --reload
+```
+
+Ardından yeni bir terminal açıp Streamlit arayüzünü çalıştır:
+
+```bash
+streamlit run src/streamlit_app.py
 ```
 
 ## API Dokümantasyonu
 
 Swagger arayüzü:
 `http://127.0.0.1:8000/docs`
+
+Streamlit arayüzü:
+`http://localhost:8501`
 
 ## Not
 
